@@ -1,0 +1,148 @@
+/*
+* @Author: 85314
+* @Date:   2018-08-14 08:12:13
+* @Last Modified by:   85314
+* @Last Modified time: 2018-08-17 20:06:00
+*/
+html {
+    font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(100% + 2 * (100vw - 375px) / 27.5);
+        font-size: calc(14px + 2 * (100vw - 320px) / 27.5);
+    }
+}
+@media screen and (min-width: 375px) {
+    html {
+        /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+        font-size: calc(100% + 2 * (100vw - 375px) / 39);
+        font-size: calc(16px + 2 * (100vw - 375px) / 39);
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        /* 414px-1000px每增加100像素宽字体增加1px(18px-22px) */
+        font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+        font-size: calc(18px + 4 * (100vw - 414px) / 586);
+    }
+}
+@media screen and (min-width: 600px) {
+    html {
+        /* 600px-1000px每增加100像素宽字体增加1px(20px-24px) */
+        font-size: calc(125% + 4 * (100vw - 600px) / 400);
+        font-size: calc(20px + 4 * (100vw - 600px) / 400);
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        /* 1000px往后是每增加100像素宽字体增加0.5px */
+        font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+        font-size: calc(24px + 6 * (100vw - 1000px) / 1000);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*容器*/
+.wrapper{
+    color: #fff;  
+    letter-spacing: 0.15rem; 
+}
+/*头部*/
+.header{
+    background: #22292c;
+    height:4.313725rem;
+    line-height: 4.313725rem;
+    position: relative;
+}
+.arrow{
+    display: block;
+    float: left;  
+    font-size: 1.27451rem;
+    color: white; 
+    text-decoration: none;
+    padding-left: 1.3rem;
+    background: url('./images/arrow.png') left center no-repeat;
+    background-size: 1.029412rem 1.813725rem;
+    margin-left: 0.833333rem;
+}
+.mirro{
+    position: absolute;
+    top:0;
+    left:45%;
+    font-size: 1.666667rem;
+}
+.circle {
+    float: right;
+    padding-right: 0.931373rem;     
+}
+.circle span{
+    float: right;
+    width: 0.490196rem;
+    height: 4.313725rem;
+    display: block;
+    background: url('./images/yuan.png') left center no-repeat;
+    padding-left: 0.294118rem;
+    background-size: 0.490196rem 0.490196rem;
+}
+/*中间内容*/
+.content{
+    background: #68cdd5;
+}
+/*返回图标*/
+.go-back{
+    padding-top: 0.980392rem;
+    padding-left:1.715686rem;
+}
+.go-back img{
+    width: 2.647059rem;
+    height: 2.647059rem;
+}
+/*中间logo和文字*/
+.logo-center{
+    text-align: center;
+    vertical-align: middle;
+    margin-top:2.058824rem;
+    margin-bottom: 5.490196rem;
+}
+.logo-font{
+    width: 8.872549rem;
+    height: 3.431373rem; 
+}
+/*中间文字*/
+.text{
+    font-size:1.470588rem;
+    line-height: 2.205882rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*底部*/
+.footer{
+    margin-top:7.941176rem;
+    margin-bottom:10rem;
+}
+.footer-left, .footer-right{
+    float: left;
+    width:40%;
+    text-align: center;
+    vertical-align: middle;
+}
+.footer-left{
+    margin-left:10%; 
+}
+.footer-right{   
+    margin-right: 10%;
+}
+.left-text, .right-text{
+    margin-top:0.980392rem;
+    font-size:1.176471rem;
+}
+.left-img,.right-img{
+    width: 4.313725rem;
+    height: 4.117647rem;
+}
+.overflow{
+    overflow: hidden;
+}
